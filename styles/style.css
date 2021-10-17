@@ -5,22 +5,45 @@
     gap:10px;
 }
 
+.buttons{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 10px;
+    width: 200px;
+    margin:10px;
+    background-color: #9c9ca0;
+    box-shadow: 1px 1px 10px;
+}
+
 button{
     border-radius: 50%;
+    background-color: #B1A296;
+    
 }
 
 .operators{
-    display:grid;
+   display:grid;
     grid-template-columns: 32px;
     grid-template-rows: repeat(5, 32px);
     gap:6px;
+    
 }
 
 .operator{
-    background-color: cadetblue;
+    background-color: #7395ae;
     color: white;
+    
 }
 
 .number{
-    background-color: lavenderblush;
+    background-color: white;
+}
+
+.equal{
+    background-color:orange;
 }
