@@ -1,0 +1,26 @@
+.numbers{
+    display:grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(4, 40px) ;
+    gap:10px;
+}
+
+button{
+    border-radius: 50%;
+}
+
+.operators{
+    display:grid;
+    grid-template-columns: 32px;
+    grid-template-rows: repeat(5, 32px);
+    gap:6px;
+}
+
+.operator{
+    background-color: cadetblue;
+    color: white;
+}
+
+.number{
+    background-color: lavenderblush;
+}
