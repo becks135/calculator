@@ -1,49 +1,82 @@
-.numbers{
-    display:grid;
-    grid-template-columns: repeat(3, 40px);
-    grid-template-rows: repeat(4, 40px) ;
-    gap:10px;
+html {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
 }
 
-.buttons{
+.calc-container {
     display: flex;
-justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     border-style: solid;
     border-color: lightslategray;
     border-width: 1px;
     border-radius: 10%;
-    padding: 10px;
-    width: 200px;
-    margin:10px;
     background-color: #9c9ca0;
     box-shadow: 1px 1px 10px;
+    width: fit-content;
+    padding: 20px;
 }
 
-button{
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: right;
+    padding: 5px 5px;
+    font-family: Montserrat;
+    border-radius: 5px;
+}
+
+.input {
+    color: lightsteelblue;
+}
+
+.result {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(4, 40px);
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin-top: 10px;
+}
+
+button {
     border-radius: 50%;
     background-color: #B1A296;
-    
 }
 
-.operators{
-   display:grid;
+.operators {
+    display: grid;
     grid-template-columns: 32px;
     grid-template-rows: repeat(5, 32px);
-    gap:6px;
-    
+    gap: 6px;
 }
 
-.operator{
+.operator {
     background-color: #7395ae;
     color: white;
-    
 }
 
-.number{
+.number {
     background-color: white;
 }
 
-.equal{
-    background-color:orange;
+.equal {
+    background-color: orange;
 }
